@@ -31,7 +31,7 @@ with open(os.path.join(sys.path[0], 'school_records.csv'), 'w', newline = '') as
 		print(records)
 		my_csvfile.writerow(records)
 
-#Reading the csv file
+#Reading the csv file as school_records
 with open(os.path.join(sys.path[0], 'school_records.csv'),'r') as my_csvfile:
 	read_file = pd.read_csv(my_csvfile)
 	print(read_file)
